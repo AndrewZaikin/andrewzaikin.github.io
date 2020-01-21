@@ -1,0 +1,353 @@
+*,
+*:after,
+*:before {
+	margin: 0;
+	padding: 0;
+}
+
+a, a:hover {
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-style: normal;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+.btn__next {
+	margin-top: 30px;
+	width: 300px;
+	height: 65px;
+	text-transform: uppercase;
+	letter-spacing: 0.4em;
+	border: none;
+	color: #fff;
+	background-color: #000;
+}
+
+.btn__next:hover {
+	text-decoration: none;
+	border: 2px solid #ff4800;
+	color: #ff4800;
+	background-color: #fff;
+}
+
+/*_____________HEADER_____________*/
+
+.header {
+	height: 8vh;
+}
+
+.top__nav {
+	padding: 20px 0;
+	background-color: rgba(255, 255, 255, .7);
+	letter-spacing: 0.4em;
+	text-align: center;
+}
+
+.top__nav a {
+	color: #000;
+	padding: 14px 30px;
+}
+
+.top__nav a:hover {
+	border-bottom: 2px solid #ff4800;
+	color: #ff4800;
+}
+
+.top__nav .icon {
+	display: none;
+}
+
+/*_____________ABOUT_____________*/
+
+.about {
+	max-width: 100%;
+	height: 92vh
+}
+
+.vh-dependent {
+	height: 55vh;
+	display: flex;
+	align-items: center;
+}
+
+.offer {
+	padding: 130px 0 0 120px;
+	width: 80%;
+	float: left;
+}
+
+.offer__pretitle {
+
+}
+
+.offer__title {
+	margin: 35px auto 15px;
+}
+
+.offer__text {
+	color: #8D8D8D;
+	text-transform: uppercase;
+}
+
+.offer a {
+	align-items: center;
+}
+
+.offer__bg {
+	background: url('../img/bg__hero.jpg') no-repeat right top;
+	background-size: 80% 100%;
+	position: absolute;
+	top: 90px;
+	right: 0;
+	width: 55%;
+	height: 83vh;
+}
+
+.be-static {
+	position: static;
+}
+
+.offer__img {
+	position: absolute;
+	bottom: 10%;
+	left: 80px;
+	max-width: 30%;
+	box-shadow: 10px 10px 10px 3px rgba(0,0,0,0.5);
+}
+
+/*_____________STORY & SKILLS_____________*/
+
+.story {
+	padding-top: 130px;
+	height: 92vh;
+}
+
+.poster {
+	width: 100%;
+
+}
+
+.story-offer {
+
+}
+
+.story-offer__title {
+	margin: 0 0 50px;
+}
+
+.story-offer__text {
+
+}
+
+/*______________________*/
+
+.skills {
+	padding-top: 140px;
+    height: 100vh;
+}
+
+.skills-title {
+
+}
+
+.skills-title__label {
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: .25em
+	color: #8F8F8F;
+	margin-bottom: 40px;
+}
+
+.skills-title__heading {
+	font-size: 24px;
+	color: #8F8F8F;
+}
+
+.skills-list {
+	margin-top: 57px;
+}
+
+.skills-list__title {
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .25em;
+	margin-bottom: 20px;
+}
+
+.skills-list__item {
+	padding: 5px 0;
+}
+
+.padding__btn {
+	padding-bottom: 50px;
+}
+
+/*__________PORTFOLIO___________*/
+
+.gallery {
+	height: 90vh;
+	padding: 35px 0 0;
+}
+
+.gallery__title {
+	font-size: 38px;
+	margin: 25px 0;
+	font-weight: 700;
+}
+
+.gallery__text {
+
+}
+
+
+/*__________SLIDER___________*/
+/* Слайдер */
+.slick-slider{
+	min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+}
+/* Конкретный слайдер */
+.slider {
+	position: relative;
+	padding: 15px 60px;
+	margin: 25px 0;
+}
+.slider .slick-arrow{
+	position: absolute;
+	top: 50%;
+	margin: -30px 0px 0px 0px;
+	z-index: 10;
+	font-size: 0;
+	width: 30px;
+	height: 60px;
+}
+.slider .slick-arrow.slick-prev{
+	left: 0;
+	background: url('../icon/left-solid.svg') 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-next{
+	right: 0;
+	background: url('../icon/right-solid.svg') 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-disabled{
+	opacity: 0.2;
+}
+.slider .slick-dots{
+	position: relative;
+}
+.slider .slick-dots li{
+	list-style: none;
+	margin: 0px 10px;
+}
+.slider .slick-dots button{
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	background-color: #000;
+	border-radius: 50%;
+}
+.slider .slick-dots li.slick-active button{
+	background-color: transparent;
+	border: 1px solid #ff4800;
+}
+.slider__item {
+	padding: 0px 15px;
+	max-height: 450px;
+
+}
+.slider__item img{
+	max-width: 100%;
+}
+.slick-next:before {
+	content: none;
+}
+.slick-prev:before {
+	content: none;
+}
+/*___________FOOTER___________*/
+
+.footer {
+	margin-top: 20px;
+	font-size: 12px;
+	text-align: center;
+	border-top: 2px solid #000;
+	text-decoration: none;
+	color: #fff;
+	background-color: #000;
+}
+
+.footer p {
+	color: #fff;
+	margin-top: 10px;
+}
+
+/*___________MODAL___________*/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 600px; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  text-align: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contact-form__input-wrapper {
+	margin: 15px;
+}
+
+

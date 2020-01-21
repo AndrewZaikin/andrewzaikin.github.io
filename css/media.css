@@ -1,0 +1,103 @@
+/*_____________MEDIA_____________*/
+
+@media screen and (max-width: 991.98px){
+	.top__nav a/*:not(:first-child)*/ {
+		display: none;
+	}
+	.top__nav a.icon {
+		float: right;
+		margin-top: -15px;
+		display: block;
+		color: #000;
+	}
+	.top__nav.responsive {
+		position: relative;
+		z-index: 10;
+	}
+	.top__nav.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+		margin-top: 5px;
+	}
+	.top__nav.responsive a {
+		float: none;
+		display: block;
+		text-align: center;
+	}
+}
+
+	/*_________CONTENT_________*/
+@media screen and (max-width: 1199.98px) {
+	.offer__img {
+		max-width: 50%;
+	}
+}
+
+@media screen and (max-width: 991.98px) {
+	.offer__text{
+		margin-bottom: 35px;
+	}
+	.offer__bg {
+		height: 75vh;
+	}
+	.offer {
+		padding: 60px 0 0 50px;	
+	}
+	.offer__img {
+		max-width: 40%;
+	}
+	.story {
+		padding-top: 80px;
+	}
+	.story-offer__title {
+		margin: 0 0 20px;
+	}
+	.skills {
+		padding-top: 65px;
+	}
+	.skills-title__label {
+		margin-bottom: 15px;
+	}
+	.skills-title__heading {
+		font-size: 16px;
+	}
+	.skills-list {
+		margin-top: 15px;
+	}
+	.btn__next {
+		margin-top: 0;
+		width: 225px;
+		height: 50px;
+	}
+	.padding__btn {
+		padding-bottom: 20px;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.about {
+		height: 60vh;
+	}
+	.offer {
+		padding: 0;
+	}
+	.offer__bg {
+		height: 45vh;
+	}
+	.story {
+		height: 65vh;
+	}
+	.skills {
+		height: 80vh;
+	}
+	.slider {
+		padding: 0px 40px;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.poster {
+		height: 250px;
+	}
+} 
