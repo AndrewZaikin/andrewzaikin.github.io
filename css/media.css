@@ -102,4 +102,16 @@
 	.poster {
 		height: 250px;
 	}
-} 
+	.vh-dependent {
+		height: 50vh;
+		align-items: baseline;
+	}
+	.offer__bg {
+		background: url(../img/bg__hero.jpg) no-repeat;
+		position: inherit;
+		width: 100%;
+	}
+	.offer__img {
+		bottom: 15%;
+	}
+}  
