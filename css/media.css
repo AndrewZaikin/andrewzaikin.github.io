@@ -40,14 +40,14 @@
 	}
 	.story {
 		padding-top: 80px;
-		height: 100vh;	
+		height: 92vh;	
 	}
 	.story-offer__title {
 		margin: 0 0 20px;
 	}
 	.skills {
 		padding-top: 65px;
-		height: 100vh;
+		height: 92vh;
 	}
 	.skills-title__label {
 		margin-bottom: 15px;
@@ -70,19 +70,19 @@
 
 @media (max-width: 767.98px) {
 	.about {
-		height: 100vh;	
+		height: 92vh;	
 	}
 	.offer {
 		padding: 0;
 	}
 	.offer__bg {
-		height: 45vh;
+		height: 100%;
 	}
 	.story {
-		height: 100vh;	
+		height: 92vh;	
 	}
 	.skills {
-		height: 100vh;	
+		height: 92vh;	
 	}
 	.slider {
 		padding: 0px 40px;
@@ -94,7 +94,7 @@
 		height: 250px;
 	}
 	.vh-dependent {
-		height: 50vh;
+		height: 52vh;
 		align-items: baseline;
 	}
 	.offer__bg {
@@ -103,7 +103,7 @@
 		width: 100%;
 	}
 	.offer__img {
-		bottom: 8%;
+		bottom: 10%;
 		left: 50%;
 	}
 } 
