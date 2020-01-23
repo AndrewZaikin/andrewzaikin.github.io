@@ -66,6 +66,9 @@
 	.padding__btn {
 		padding-bottom: 20px;
 	}
+	.gallery {
+		padding: 0;
+	}
 }
 
 @media (max-width: 767.98px) {
