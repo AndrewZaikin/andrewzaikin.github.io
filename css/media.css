@@ -40,14 +40,14 @@
 	}
 	.story {
 		padding-top: 80px;
-		height: 92vh;	
+		height: 92%;	
 	}
 	.story-offer__title {
 		margin: 0 0 20px;
 	}
 	.skills {
 		padding-top: 65px;
-		height: 92vh;
+		height: 92%;
 	}
 	.skills-title__label {
 		margin-bottom: 15px;
@@ -70,7 +70,7 @@
 
 @media (max-width: 767.98px) {
 	.about {
-		height: 92vh;	
+		height: 92%;	
 	}
 	.offer {
 		padding: 0;
@@ -79,10 +79,10 @@
 		height: 100%;
 	}
 	.story {
-		height: 92vh;	
+		height: 92%;	
 	}
 	.skills {
-		height: 92vh;	
+		height: 92%;	
 	}
 	.slider {
 		padding: 0px 40px;
