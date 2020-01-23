@@ -29,15 +29,29 @@ $(document).ready(function(){
     });
 });
 
-menu.onclick = function myFunction() {
-	var x = document.getElementById("top__nav");
+var button = document.getElementById('hamburger-menu'),
+    span = button.getElementsByTagName('span')[0];
 
-	if(x.className === "top__nav") {
-		x.className += " responsive";
-	} else {
-		x.className = "top__nav";
-	}
+button.onclick =  function() {
+  span.classList.toggle('hamburger-menu-button-close');
 };
+
+$('#hamburger-menu').on('click', toggleOnClass);
+
+function toggleOnClass(event) {
+  var toggleElementId = '#' + $(this).data('toggle'),
+  element = $(toggleElementId);
+
+  element.toggleClass('on');
+
+}
+
+// close hamburger menu after click a
+$( '.menu li a' ).on("click", function(){
+  $('#hamburger-menu').click();
+});
+
+
 
 var $page = $('html, body');
 $('a[href*="#"]').click(function() {
@@ -73,4 +87,4 @@ window.onclick = function(event) {
   }
 }
 
-
+document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
