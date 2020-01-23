@@ -1,29 +1,20 @@
 /*_____________MEDIA_____________*/
 
 @media screen and (max-width: 991.98px){
-	.top__nav a/*:not(:first-child)*/ {
-		display: none;
+	.menu {
+		display: grid;
+		width: 100%;
 	}
-	.top__nav a.icon {
-		float: right;
-		margin-top: -15px;
-		display: block;
-		color: #000;
+	.ham-menu ul {
+		-webkit-transform: translateY(-110%);
+        transform: translateY(-110%);
+		background-color: #000;
+		-webkit-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
 	}
-	.top__nav.responsive {
-		position: relative;
-		z-index: 10;
-	}
-	.top__nav.responsive a.icon {
-		position: absolute;
-		right: 0;
-		top: 0;
-		margin-top: 5px;
-	}
-	.top__nav.responsive a {
-		float: none;
-		display: block;
-		text-align: center;
+	.ham-menu {
+		top: 36px;
+    	right: 43px;
 	}
 }
 
@@ -113,5 +104,6 @@
 	}
 	.offer__img {
 		bottom: 15%;
+		left: 50%;
 	}
-}  
+} 
