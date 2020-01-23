@@ -29,6 +29,10 @@ body {
     box-sizing: border-box;
 }
 
+button {
+	outline: none !important;
+}
+
 .btn__next {
 	margin-top: 30px;
 	width: 300px;
@@ -53,26 +57,109 @@ body {
 	height: 8vh;
 }
 
-.top__nav {
-	padding: 20px 0;
-	background-color: rgba(255, 255, 255, .7);
-	letter-spacing: 0.4em;
-	text-align: center;
+.hamburger-menu-button {
+  width: 40px;
+  height: 40px;
+  padding: 6px;
+  display: block;
+  position: relative;
+  margin-top: 10px;
+  float: right;
+  z-index: 100;
+  background: #000;
+  border: 5px solid #fff;
+  box-sizing: content-box;
+  border-radius: 50%;
+  text-indent: 100%;
+  color: transparent;
+  white-space: nowrap;
+  cursor: pointer;
+  overflow: hidden;
 }
-
-.top__nav a {
-	color: #000;
-	padding: 14px 30px;
+.hamburger-menu-button-open {
+  top: 50%;
+  margin-top: -1px;
+  left: 50%;
+  margin-left: -12px;
 }
-
-.top__nav a:hover {
-	border-bottom: 2px solid #ff4800;
-	color: #ff4800;
+.hamburger-menu-button-open, 
+.hamburger-menu-button-open::before, 
+.hamburger-menu-button-open::after {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
-
-.top__nav .icon {
-	display: none;
+.hamburger-menu-button-open::before, 
+.hamburger-menu-button-open::after {
+  left: 0;
+  content: "";
 }
+.hamburger-menu-button-open::before {
+  top: 6px;
+}
+.hamburger-menu-button-open::after {
+  bottom: 6px;
+}
+.hamburger-menu-button-close {
+  background: transparent;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.hamburger-menu-button-close::before {
+  -webkit-transform: translateY(-6px) rotate(45deg);
+          transform: translateY(-6px) rotate(45deg);
+}
+.hamburger-menu-button-close::after {
+  -webkit-transform: translateY(6px) rotate(-45deg);
+          transform: translateY(6px) rotate(-45deg);
+}
+.ham-menu {
+  position: absolute;
+  top: 13px;
+  right: 56px;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+}
+.ham-menu ul {
+  -webkit-transform: translateX(110%);
+          transform: translateX(110%);
+  background-color: #000;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.ham-menu.on ul {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+.ham-menu ul {
+  font-size: 0;
+}
+.ham-menu ul li {
+  display: inline-block;
+}
+.ham-menu ul li:first-child .ham-menu ul li a {
+  padding-left: 30px;
+}
+.ham-menu ul li a {
+  padding: 16px 25px;
+  display: block;
+  background-color: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-size: 16px;
+  letter-spacing: .6em;
+}
+.ham-menu ul li.active a, .ham-menu ul li a:hover {
+  background-color: #ff4800;
+  color: #fff !important;
+} 
 
 /*_____________ABOUT_____________*/
 
